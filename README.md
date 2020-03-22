@@ -15,6 +15,13 @@ Next, this is the second milestone video which talks about the challenges and th
 https://drive.google.com/open?id=1-3K-Kg2TsEh82xNkMZk7G1Z6xrp4qVcU
 
 
+Here are the links that I used to complete the tasks in Milestone 2.
+https://www.datasciencecentral.com/profiles/blogs/how-to-install-and-run-hadoop-on-windows-for-beginners
+https://kontext.tech/column/hadoop/291/apache-hive-300-installation-on-windows-10-step-by-step-guide
+https://www.youtube.com/watch?v=npyRXkMhrgk
+
+
+
 
 
 
