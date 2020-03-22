@@ -1,6 +1,5 @@
 # KlangValley-House-Price-Prediction
 
-Introduction
 Housing affordability is an increasing problem in Malaysia especially in Klang Valley which covers Kuala Lumpur and Selangor.
 The house developers are not building more affordable houses and the wages of Malaysian remains almost stagnant compared to 10 years ago causing a mismatch in demand and supply.
 Hence, we would like to investigate how house price differ by areas and other factors such as leasehold/freehold, facilities and etc to determine which are the most important factors in determining house price.
