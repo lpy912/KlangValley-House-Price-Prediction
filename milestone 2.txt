@@ -1,0 +1,63 @@
+Microsoft Windows [Version 10.0.18362.657]
+(c) 2019 Microsoft Corporation. All rights reserved.
+
+#change directory
+C:\Users\loel7003>cd C:\Users\loel7003\Downloads\hadoop-3.1.2\hadoop-3.1.2\sbin
+#start hadoop
+C:\Users\loel7003\Downloads\hadoop-3.1.2\hadoop-3.1.2\sbin>start-dfs
+#start yarn manager
+C:\Users\loel7003\Downloads\hadoop-3.1.2\hadoop-3.1.2\sbin>start-yarn
+#change directory from sbin to bin
+C:\Users\loel7003\Downloads\hadoop-3.1.2\hadoop-3.1.2\sbin>cd C:\Users\loel7003\Downloads\hadoop-3.1.2\hadoop-3.1.2\bin
+#create new folder in hdfs
+C:\Users\loel7003\Downloads\hadoop-3.1.2\hadoop-3.1.2\bin>hdfs dfs -mkdir /datamining
+#use put to move csv file from local disk to the new datamining folder
+C:\Users\loel7003\Downloads\hadoop-3.1.2\hadoop-3.1.2\bin>hdfs dfs -put /C:/Users/loel7003/Documents/WQD180022/mudah_kl_add.csv /datamining
+#Check whether it is successful using ls
+C:\Users\loel7003\Downloads\hadoop-3.1.2\hadoop-3.1.2\bin>hdfs dfs -ls /datamining
+#Result should be like this
+Found 1 items
+-rw-r--r--   1 loel7003 supergroup    5512657 2020-03-22 14:15 /datamining/mudah_kl_add.csv
+#Repeat for another file
+C:\Users\loel7003\Downloads\hadoop-3.1.2\hadoop-3.1.2\bin>hdfs dfs -put /C:/Users/loel7003/Documents/WQD180022/mudah_sel_add.csv /datamining
+C:\Users\loel7003\Downloads\hadoop-3.1.2\hadoop-3.1.2\bin>hdfs dfs -ls /datamining
+Found 2 items
+-rw-r--r--   1 loel7003 supergroup    5512657 2020-03-22 14:15 /datamining/mudah_kl_add.csv
+-rw-r--r--   1 loel7003 supergroup    5163149 2020-03-22 14:17 /datamining/mudah_sel_add.csv
+
+#Change directory to navigate to derby
+C:\Users\loel7003\Downloads\hadoop-3.1.2\hadoop-3.1.2\sbin>cd C:\Users\loel7003\Downloads\db-derby-10.12.1.1-bin\bin
+#Open derby connection
+C:\Users\loel7003\Downloads\db-derby-10.12.1.1-bin\bin>startNetworkServer -h 0.0.0.0
+
+#In other command prompt
+#change directory to hive
+C:\Users\loel7003>cd C:\Users\loel7003\Downloads\apache-hive-3.0.0-bin\bin
+#check connection
+C:\Users\loel7003\Downloads\apache-hive-3.0.0-bin\bin>jps -m
+#run hive
+C:\Users\loel7003\Downloads\apache-hive-3.0.0-bin\bin>hive
+#insert file into Hive data warehouse
+hive>create external table if not exists mudahkl
+(no int, area string, price string, bedroom string, bathroom string, type string, square_feet string, 
+link string, title string, other_info string, carpark int, facilities string)
+row format delimited
+fields terminated by ‘,’
+stored as textfile
+location ‘/datamining’; 
+#test if it works
+hive>show tables;
+
+#Closing hive shell
+hive>quit;
+#Closing Derby Connection
+java -jar %DERBY_HOME%\lib\derbyrun.jar server shutdown
+#Closing yarn
+cd C:\Users\loel7003\Downloads\hadoop-3.1.2\hadoop-3.1.2\sbin>stop-yarn
+#Closing nodes
+C:\Users\loel7003\Downloads\hadoop-3.1.2\hadoop-3.1.2\sbin>stop-dfs
+
+
+
+
+
