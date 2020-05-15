@@ -21,8 +21,9 @@ https://www.datasciencecentral.com/profiles/blogs/how-to-install-and-run-hadoop-
 https://kontext.tech/column/hadoop/291/apache-hive-300-installation-on-windows-10-step-by-step-guide
 https://www.youtube.com/watch?v=npyRXkMhrgk
 
-In the 3rd milestone, data retrieval from Hive is required.
+In Milestone 3, data retrieval from Hive is required.
 Please find the video link which explains the code below.
+https://drive.google.com/file/d/1vAbjimnlNSiizd4e5T5P7Hkwg0MPvyiZ/view?usp=sharing
 
 
 
