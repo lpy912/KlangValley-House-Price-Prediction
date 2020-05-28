@@ -3,7 +3,7 @@ The Malaysia government has classified Malaysian into 3 groups based on their mo
 Department of Statistics Malaysia has published the median monthly household income of each demarcation. We see that the B40 household has RM 3000 only as median income and hence raises question on whether these households are able to own a house in the Klang Valley.
 Moreover, Klang Valley has the most number of M40 household but a RM 5000 household income might also be considered as urban poor as the house price and living expenses in Klang Valley are more expensive.
 Therefore, data is scraped from a property listings website in order to address the concerns of house affodability for B40 and M40 groups.<br/>
-For more information, you may read the article below.
+For more information, you may read the article below.<br/>
 https://www.thestar.com.my/opinion/columnists/on-the-beat/2019/04/07/middle-class-malady
 
 The objective of the project is to<br/>
