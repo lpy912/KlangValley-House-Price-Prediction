@@ -33,6 +33,9 @@ The video in the link  below will present on the insights and the process in add
 https://drive.google.com/file/d/1aGsoG_nSDsdFRD41PCTAx1S_uR-LGPj3/view?usp=sharing<br/>
 Some error in my presentation, the affordable house price should be 300k instead of 30k.
 
+For Milestone 5, please go to another github repo via the link below.
+
+https://github.com/lpy912/Streamlit_HouseApp
 
 
 
